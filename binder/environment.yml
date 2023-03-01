@@ -1,4 +1,7 @@
-name: L3MEG-GH-TP1-essai
+name: L3MEG-GH-TP
+# created in Fevruary 2023 from repository L3MEG-GH-TP-2022
+#updated with latest versions
+
 channels:
 # channels priority
 # see https://bioconda.github.io/
@@ -8,14 +11,25 @@ channels:
   - bioconda
   
 dependencies:
-  - jupyterlab>=3
-  - nbresuse
+ # Jupyter dependencies
+  - jupyterhub>=1.5,<2
+  - jupyterlab>=3.2,<4
+  - jupyter-resource-usage
+  - jupyterlab-topbar
+  - jupyterlab-topbar-text
+  - jupyterlab-system-monitor
+  - nodejs
+  # Jupyter archive
+  # https://github.com/jupyterlab-contrib/jupyter-archive
+  - jupyter-archive
+  # Bash environment
   - python>=3.8
   - pip
-  - nodejs
+  - pip:
+    - bash_kernel
   - r-irkernel
   - r-base>=4.1.0
   - r-tidyverse 
+  # For the L3 practical course:
   - merlin=1.1.2
-  - pip:
-    - bash_kernel
+
