@@ -19,6 +19,7 @@ dependencies:
   - jupyterlab-topbar-text
   - jupyterlab-system-monitor
   - nodejs
+  - gfortran_linux-64
   # Jupyter archive
   # https://github.com/jupyterlab-contrib/jupyter-archive
   - jupyter-archive
@@ -29,7 +30,8 @@ dependencies:
     - bash_kernel
   - r-irkernel
   - r-base>=4.1.0
-  - r-tidyverse 
+  - r-tidyverse
+  - r-rcpp
   # For the L3 practical course:
   - merlin=1.1.2
 
