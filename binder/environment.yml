@@ -7,9 +7,9 @@ channels:
 # see https://bioconda.github.io/
 # conda-forge has highest prioriy
   - defaults
-  - conda-forge
   - bioconda
-  
+  - conda-forge
+
 dependencies:
  # Jupyter dependencies
   - jupyterhub>=1.5,<2
